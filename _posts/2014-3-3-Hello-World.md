@@ -1,10 +1,21 @@
 ---
 layout: post
-title: You're up and running!
+title: Página personal de Code de LatinCrack!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Primer artículo de bienvenida
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+## Sección 1
+``` Assembler
+    org  0x100        
+    ; int 21h is going to want...
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+    mov  dx, msg      
+    mov  ah, 9        
+    int  0x21         
+
+    mov  ah, 0x4c     
+    int  0x21         
+
+    msg  db 'Hello, GitHub!', 0x0d, 0x0a, '$'
+```
