@@ -1,5 +1,5 @@
 baseURL = "https://latincrack.github.io/"
 languageCode = "es"
 title = "LatinCrack"
-# Borramos la línea de theme por completo
+# Borramos la línea de theme por completo pues no tenemos temas instalado todo esta en /layouts
 pagerSize = 5
