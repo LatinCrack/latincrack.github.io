@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div style="display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; text-align: center;">
+  
+  <div style="display:flex; align-items:center; justify-content:center; margin-bottom:1rem;">
+    <img src="/images/avatar.png" style="width:35px; height:35px; border-radius:50%; border:1px solid #0f0; margin-right:0.5rem;">
+    <span style="color:#0f0; font-size:1.2rem;"><strong>latincrack</strong>@<strong>{{ if .IsHome }}kali{{ else }}{{ .Title | lower }}{{ end }}</strong>:~$ cat info.txt</span>
+  </div>
+
+<div class="post-content" style="margin-bottom: 1.5rem; width: 100%; text-align: center;">
+    {{ .Content }}
+</div>
+
+  <div style="width: 100%; height: 1px; background: #040; margin-bottom: 1.5rem;"></div>
+
+  <p style="color: #0a0; margin-bottom: 1rem;">latincrack@{{ if .IsHome }}kali{{ else }}{{ .Title | lower }}{{ end }}:~$ ls -1</p>
+  
+  <div style="display:flex; flex-direction: column; gap: 0.8rem; align-items: center;">
+    {{ if .IsHome }}
+        {{ range .Site.Sections }}
+          <a href="{{ .Permalink }}" class="matrix-button">{{ .Title }}</a>
+        {{ end }}
+    {{ else }}
+        {{ range .Pages }}
+          <a href="{{ .Permalink }}" class="menu-post"> → {{ .Title }} </a>
+        {{ end }}
+    {{ end }}
+  </div>
+
+  {{ if not .IsHome }}
+    <a href="/" class="menu-post" style="margin-top: 2rem;">🏠 cd /home/</a>
+  {{ end }}
+</div>
+{{ end }}

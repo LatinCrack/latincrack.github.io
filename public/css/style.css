@@ -1,0 +1,161 @@
+/* --- CONFIGURACIÓN BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #000;
+  color: #0f0;
+  font-family: 'Courier New', monospace; /* Fuente de terminal */
+  line-height: 1.4;
+  padding: 1.5rem;
+}
+
+/* --- ANIMACIONES (MATRIX/TERMINAL) --- */
+@keyframes blink { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0; } }
+@keyframes matrix-flicker { 0%, 50%, 100% { opacity: 1; } 20%, 40%, 60%, 80% { opacity: 0.6; } }
+@keyframes matrix-hover { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0.6; } }
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background: #0f0;
+  animation: blink 1s step-start infinite;
+}
+
+/* --- ELEMENTOS REUTILIZABLES --- */
+.matrix-button {
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s;
+  animation: matrix-flicker 3s infinite;
+  display: inline-block;
+}
+
+.matrix-button:hover {
+  background: #0f0;
+  color: #000;
+  transform: scale(1.1);
+  animation: none;
+}
+
+.menu-post {
+  color: #0f0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.menu-post:hover {
+  animation: matrix-hover 0.8s infinite;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
+
+/* 1. Mantenemos el centrado general (Index y Bandit) */
+.post-content {
+    text-align: center;
+    width: 100%;
+}
+
+/* 2. Regla específica SOLO para Docker y K8S */
+/* Buscamos cualquier elemento dentro de las rutas de Docker y K8S */
+[href*="/docker/"] ~ .post-content, 
+[href*="/k8s/"] ~ .post-content,
+.post-content ol { 
+    /* Si prefieres ser radical y solo afectar a Docker/K8S, 
+       usaremos una clase que Hugo pone en el body o un contenedor padre */
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content; /* Esto mantiene el bloque en el centro pero el texto a la izquierda */
+}
+
+/* 3. Ajuste para que las listas no se peguen al borde */
+.post-content ol {
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+/* Mejora para los bloques de código dentro de los retos */
+.post-content pre {
+    background: #080808;
+    border: 1px solid #0f0; /* Borde completo sutil */
+    border-left: 4px solid #0f0; /* Línea gruesa a la izquierda */
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    border-radius: 4px;
+}
+
+.post-content code {
+    font-family: 'Courier New', monospace;
+    color: #0f0;
+}
+
+/* Reducir espacio entre líneas de texto */
+.post-content p {
+    margin-bottom: 0.5rem; /* Antes era mucho más grande por defecto */
+}
+
+/* Eliminar margen del último párrafo para que no empuje el separador */
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Alineación dinámica */
+.home-text { text-align: center; }
+.section-text { text-align: left; }
+
+/* Configuración para que el símbolo y el texto no se encimen */
+.post-content ul li {
+    display: flex;             /* Alinea el símbolo y el texto en una fila */
+    align-items: flex-start;   /* Mantiene el símbolo arriba si el texto es largo */
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.post-content ul li::before {
+    content: "> ";
+    color: #0f0;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;            /* Evita que el símbolo se aplaste */
+}
+
+/* Para listas ordenadas (1, 2, 3), asegura que el número sea verde */
+.post-content ol {
+    color: #0f0;
+    padding-left: 1.5rem;
+}
+
+/* --- EFECTO DE VIBRACIÓN (GLITCH) --- */
+@keyframes glitch-vibration {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1.5px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+/* Aplicar a los enlaces de los niveles */
+.menu-post:hover {
+  display: inline-block;
+  animation: glitch-vibration 0.2s infinite; /* Vibración rápida */
+  text-shadow: 0 0 8px #0f0, 0 0 15px #0f0; /* Brillo neón intenso */
+  letter-spacing: 1px; /* El texto se expande un poco */
+}
+
+/* Aplicar también a los botones de la Home */
+.matrix-button:hover {
+  animation: glitch-vibration 0.2s infinite !important;
+  box-shadow: 0 0 15px #0f0;
+}
+
+footer p {
+    animation: matrix-flicker 5s infinite;
+    letter-spacing: 1px;
+}

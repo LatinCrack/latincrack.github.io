@@ -1,0 +1,5 @@
+baseURL = "http://localhost:1313/"
+languageCode = "es"
+title = "latincrack"
+theme = ""  # sin tema
+pagerSize = 5

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level0 | latincrack</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  
+  
+    <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body class="terminal">
+    <main>
+      
+<div style="display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto;">
+
+  <div style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+    <a href="http://localhost:1313/bandit/" class="menu-post">📁 cd ../</a>
+    <a href="/" class="menu-post">🏠 cd /home/</a>
+  </div>
+
+  <div style="display:flex; align-items:center; justify-content:center; margin-bottom: 1rem; height:40px; width: 100%;">
+    <img src="/images/avatar.png" alt="Avatar" 
+         style="width:35px; height:35px; border-radius:50%; border:1px solid #0f0; margin-right:0.5rem;">
+    <span style="color:#0f0; font-size:1.2rem; line-height:40px;">
+      <strong>latincrack</strong>@<strong>bandit</strong>:~/level0$ cat solution.md
+    </span>
+    <span class="cursor">&nbsp;</span>
+  </div>
+
+  <article class="post-content" style="width: 100%; text-align: left;">
+    <h3 id="-enunciado-del-reto">📝 Enunciado del Reto</h3>
+<blockquote>
+<p>El objetivo de este nivel es que te conectes al juego mediante SSH. El servidor está escuchando en el puerto 2220.</p>
+</blockquote>
+<h3 id="-objetivo">🎯 Objetivo</h3>
+<p>Establecer la primera conexión exitosa al servidor para comenzar el wargame y obtener acceso a la shell inicial.</p>
+<h3 id="-condiciones-y-datos">🛠️ Condiciones y Datos</h3>
+<ul>
+<li><strong>Host:</strong> <code>bandit.labs.overthewire.org</code></li>
+<li><strong>Puerto:</strong> <code>2220</code></li>
+<li><strong>Usuario:</strong> <code>bandit0</code></li>
+<li><strong>Password:</strong> <code>bandit0</code></li>
+</ul>
+<h3 id="-solución">🚀 Solución</h3>
+<p>Para resolver este nivel, utilizamos el cliente de SSH nativo de Linux. Ejecutamos el siguiente comando en la terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Conectando al servidor por primera vez</span>
+</span></span><span style="display:flex;"><span>ssh bandit0@bandit.labs.overthewire.org -p <span style="color:#ae81ff">2220</span>
+</span></span></code></pre></div><p>Al solicitar la contraseña, ingresamos: bandit0.</p>
+<p>Una vez dentro, podemos confirmar nuestra identidad con el comando whoami o listar los archivos iniciales con ls.</p>
+<h3 id="-recomendaciones--conceptos-clave">💡 Recomendaciones / Conceptos Clave</h3>
+<ul>
+<li>
+<p><strong>SSH (Secure Shell):</strong> Protocolo utilizado para administrar máquinas de forma remota de manera segura.</p>
+</li>
+<li>
+<p><strong>Parámetro -p:</strong> Se utiliza para especificar un puerto distinto al puerto por defecto (22).</p>
+</li>
+<li>
+<p><strong>Fingerprint:</strong> La primera vez que te conectes, verás un mensaje sobre la autenticidad del host; escribe yes para continuar</p>
+</li>
+</ul>
+
+  </article>
+
+</div>
+
+    </main>
+    <footer style="margin-top: 3rem; border-top: 1px solid #0f0; padding-top: 1rem; text-align: center; font-size: 0.8rem; color: #080;">
+    <p>latincrack@kali:~$ uptime</p>
+    <p>up 99.9% | system_status: online | built_with: LatinCrack</p>
+</footer>
+</body>
+</html>
