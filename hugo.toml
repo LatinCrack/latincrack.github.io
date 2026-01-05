@@ -1,5 +1,5 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://latincrack.github.io/"
 languageCode = "es"
-title = "latincrack"
-theme = ""  # sin tema
+title = "LatinCrack"
+# Borramos la línea de theme por completo
 pagerSize = 5
