@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bandit on latincrack</title>
+    <link>http://localhost:1313/tags/bandit/</link>
+    <description>Recent content in Bandit on latincrack</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/tags/bandit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bandit Level 1</title>
+      <link>http://localhost:1313/bandit/level1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bandit/level1/</guid>
+      <description>&lt;h2 id=&#34;contexto&#34;&gt;Contexto&lt;/h2&gt;&#xA;&lt;p&gt;Este es el segundo nivel de Bandit.&lt;/p&gt;&#xA;&lt;h2 id=&#34;objetivo&#34;&gt;Objetivo&lt;/h2&gt;&#xA;&lt;p&gt;Obtener la contraseña para Bandit Level 2 usando comandos básicos de Linux.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

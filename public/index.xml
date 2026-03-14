@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LatinCrack</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on LatinCrack</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1: Fundamentos de Red Teaming</title>
+      <link>http://localhost:1313/crta/1-1/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/crta/1-1/</guid>
+      <description>&lt;p&gt;📝 &lt;strong&gt;Resumen del Módulo&lt;/strong&gt;&#xA;Introducción a la filosofía de operaciones ofensivas y la mentalidad de un adversario real.&lt;/p&gt;&#xA;&lt;p&gt;🎯 &lt;strong&gt;Objetivo&lt;/strong&gt;&#xA;Comprender la diferencia crítica entre Pentesting y Red Teaming.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;🚀 &lt;strong&gt;Conceptos Clave&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Red Teaming:&lt;/strong&gt; Simulación de ataques para entrenar a personas, procesos y tecnología.&#xA;&lt;strong&gt;Sigilo:&lt;/strong&gt; La prioridad es entrar y actuar sin dejar rastros (&lt;em&gt;No footprints&lt;/em&gt;).&#xA;&lt;strong&gt;Pivoting:&lt;/strong&gt; Capacidad de cambiar de estrategia o técnica ante obstáculos.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;🛠️ &lt;strong&gt;Diferencias Principales&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pentest:&lt;/strong&gt; Enfoque en reducir vulnerabilidades técnicas en un alcance limitado.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Red Team:&lt;/strong&gt; Enfoque en medir la capacidad de respuesta y detección de la organización de forma global.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;📖 &lt;strong&gt;Glosario Técnico&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Level1</title>
+      <link>http://localhost:1313/bandit/level1/</link>
+      <pubDate>Sun, 04 Jan 2026 23:37:45 -0500</pubDate>
+      <guid>http://localhost:1313/bandit/level1/</guid>
+      <description>&lt;h3 id=&#34;-enunciado-del-reto&#34;&gt;📝 Enunciado del Reto&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Aquí va la descripción oficial de OverTheWire.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;-objetivo&#34;&gt;🎯 Objetivo&lt;/h3&gt;&#xA;&lt;p&gt;Encontrar la contraseña para el siguiente nivel.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-condiciones-y-datos&#34;&gt;🛠️ Condiciones y Datos&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Host:&lt;/strong&gt; &lt;code&gt;bandit.labs.overthewire.org&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Puerto:&lt;/strong&gt; &lt;code&gt;2220&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Usuario:&lt;/strong&gt; &lt;code&gt;banditX&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; &lt;code&gt;XXXXX&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-solución&#34;&gt;🚀 Solución&lt;/h3&gt;&#xA;&lt;p&gt;Para resolver este nivel, ejecutamos:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Escribe aquí tus comandos&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Level0</title>
+      <link>http://localhost:1313/bandit/level0/</link>
+      <pubDate>Sun, 04 Jan 2026 23:37:35 -0500</pubDate>
+      <guid>http://localhost:1313/bandit/level0/</guid>
+      <description>&lt;h3 id=&#34;-enunciado-del-reto&#34;&gt;📝 Enunciado del Reto&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;El objetivo de este nivel es que te conectes al juego mediante SSH. El servidor está escuchando en el puerto 2220.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;-objetivo&#34;&gt;🎯 Objetivo&lt;/h3&gt;&#xA;&lt;p&gt;Establecer la primera conexión exitosa al servidor para comenzar el wargame y obtener acceso a la shell inicial.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-condiciones-y-datos&#34;&gt;🛠️ Condiciones y Datos&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Host:&lt;/strong&gt; &lt;code&gt;bandit.labs.overthewire.org&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Puerto:&lt;/strong&gt; &lt;code&gt;2220&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Usuario:&lt;/strong&gt; &lt;code&gt;bandit0&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; &lt;code&gt;bandit0&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-solución&#34;&gt;🚀 Solución&lt;/h3&gt;&#xA;&lt;p&gt;Para resolver este nivel, utilizamos el cliente de SSH nativo de Linux. Ejecutamos el siguiente comando en la terminal:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docker/level0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docker/level0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docker/level1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docker/level1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/k8s/level0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/k8s/level0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/k8s/level1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/k8s/level1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

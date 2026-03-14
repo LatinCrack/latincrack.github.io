@@ -1,0 +1,28 @@
+/* Fondo y texto */
+body {
+  background-color: #000000;
+  color: #00ff00;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cursor parpadeante */
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Links */
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66ff66;
+}

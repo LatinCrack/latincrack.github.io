@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div style="display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto;">
+
+  <div style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+    <a href="{{ .Parent.Permalink }}" class="menu-post">📁 cd ../</a>
+    <a href="/" class="menu-post">🏠 cd /home/</a>
+  </div>
+
+  <div style="display:flex; align-items:center; justify-content:center; margin-bottom: 1rem; height:40px; width: 100%;">
+    <img src="/images/avatar.png" alt="Avatar" 
+         style="width:35px; height:35px; border-radius:50%; border:1px solid #0f0; margin-right:0.5rem;">
+    <span style="color:#0f0; font-size:1.2rem; line-height:40px;">
+      <strong>latincrack</strong>@<strong>{{ .Section }}</strong>:~/{{ .Title | urlize }}$ cat solution.md
+    </span>
+    <span class="cursor">&nbsp;</span>
+  </div>
+
+  <article class="post-content" style="width: 100%; text-align: left;">
+    {{ .Content }}
+  </article>
+
+</div>
+{{ end }}
